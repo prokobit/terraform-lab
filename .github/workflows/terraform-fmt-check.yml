@@ -1,0 +1,12 @@
+name: "Terraform Formatting Check"
+on: [push]
+jobs:
+  terraform:
+    name: "Terraform Formatting Check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Terraform Formating Check
+        run: | 
+          terraform fmt -recursive -check -diff
