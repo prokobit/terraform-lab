@@ -5,7 +5,7 @@ data "azurerm_client_config" "tfpk" {
 }
 
 resource "azurerm_resource_group" "tfpk" {
-  name     = "${var.prefix}-aks-resources"
+  name     = "${var.prefix}-resources"
   location = "West Europe"
 }
 
