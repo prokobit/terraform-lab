@@ -3,11 +3,11 @@ terraform {
   required_providers {
     minikube = {
       source  = "scott-the-programmer/minikube"
-      version = "~> 0.4"
+      version = "~> 0.6"
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "~> 2.25"
+      version = "~> 3.0"
     }
     helm = {
       source  = "hashicorp/helm"
