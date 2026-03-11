@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - uses: hashicorp/setup-terraform@v4
+
       - name: Terraform Formating Check
         run: | 
           terraform fmt -recursive -check -diff
