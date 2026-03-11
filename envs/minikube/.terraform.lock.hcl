@@ -66,7 +66,7 @@ provider "registry.terraform.io/hashicorp/kubernetes" {
 
 provider "registry.terraform.io/scott-the-programmer/minikube" {
   version     = "0.6.0"
-  constraints = "~> 0.4"
+  constraints = "~> 0.6"
   hashes = [
     "h1:b2DJdavTUmUbOLsHrw+A9Q/yfn4ZAUjvcGL8vi9wWbk=",
     "zh:07384be2c110a8727f8a42abb387c5bb715e984ce5394e947a628ac62d9a6288",

@@ -1,5 +1,5 @@
 provider "minikube" {
-  kubernetes_version = "v1.35.1"
+  kubernetes_version = "v1.35.2"
 }
 
 provider "kubernetes" {
