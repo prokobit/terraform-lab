@@ -1,10 +1,11 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:
-  name: vote-gateway
+  name: gateway
 spec:
   gatewayClassName: nginx
   listeners:
     - name: http
       port: 80
       protocol: HTTP
+      hostname: gateway.local

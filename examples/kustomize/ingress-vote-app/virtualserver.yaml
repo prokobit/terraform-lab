@@ -1,0 +1,14 @@
+apiVersion: k8s.nginx.org/v1
+kind: VirtualServer
+metadata:
+  name: vote
+spec:
+  host: ingress-vote.local
+  listener:
+    http: http-80
+  # gunzip: on
+  routes:
+  - path: /
+    routeSelector:
+      matchLabels:
+        app: vote

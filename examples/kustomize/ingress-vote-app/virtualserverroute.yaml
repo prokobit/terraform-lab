@@ -1,0 +1,14 @@
+apiVersion: k8s.nginx.org/v1
+kind: VirtualServerRoute
+metadata:
+  name: vote-route
+spec:
+  host: ingress-vote.local
+  upstreams:
+  - name: vote
+    service: vote
+    port: 80
+  subroutes:
+  - path: /vote
+    action:
+      pass: vote
